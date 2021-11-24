@@ -17,6 +17,9 @@ public class GameManagerSpawner : MonoBehaviour
 
     public GameObject[] EnemyList;
 
+    [Tooltip("En pourcentage, mettre dans l'ordre croissant, en symétrie avec l'ennemie en question")]
+    public float[] enemySpawnRates;
+
 
     //Descend ou augmente dans DestroyOnContact
     public static float enemyCount;
@@ -61,13 +64,28 @@ public class GameManagerSpawner : MonoBehaviour
     }
 
 
+    private int ChooseEnemyToSpawn()
+    {
+        float randomValue = Random.Range(0, 100);
+        int valueToChoose = 0;
+        for (int i = 0; i < enemySpawnRates.Length; i++)
+        {
+            if (randomValue < enemySpawnRates[i])
+            {
+                valueToChoose = i;
+            }
+        }
+
+        return valueToChoose;
+    }
+
 
     private void SpawnEnemy ()
     {
         if (canSpawn && enemyCount <= maxEnemy)
         {
             canSpawn = false;
-            int randValue = Random.Range(0, EnemyList.Length);
+            int randValue = ChooseEnemyToSpawn();
             Debug.Log(randValue);
             Instantiate(EnemyList[randValue], spawnPosition, transform.rotation);
         }
