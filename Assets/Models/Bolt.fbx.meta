@@ -2,7 +2,19 @@ fileFormatVersion: 2
 guid: b322a385c2697f247a2fde34216c5ae9
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -4409556951233157920
+    second: Light.002|Cube.005Action
+  - first:
+      74: -92777490337391277
+    second: Light.002|Cube.009Action
+  - first:
+      74: 3987113340330373977
+    second: Light.002|CylinderAction
+  - first:
+      74: 4402105958958337028
+    second: Light.002|Light.002Action
   externalObjects: {}
   materials:
     materialImportMode: 2
