@@ -20,9 +20,13 @@ public class DestroyOnContact : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" || other.gameObject.CompareTag("Bolt"))
+        if (other.gameObject.name == "Player")
         {
             Destroy(gameObject);
+        }
+        if (other.gameObject.CompareTag("Bolt"))
+        {
+            other.gameObject.GetComponent<Bolt>().AddEnnemy(this.gameObject);
         }
     }
 }
