@@ -368,7 +368,7 @@
                     "path": "<XRController>{LeftHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -376,7 +376,7 @@
                 {
                     "name": "",
                     "id": "7c381bd4-7abc-409a-9e0c-16f3b918fb73",
-                    "path": "<XRSimulatedController>{LeftHand}/triggerButton",
+                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{LeftHand}/triggerpressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -911,7 +911,7 @@
                 {
                     "name": "",
                     "id": "372eb9e9-3997-457a-8d7c-7bee59530157",
-                    "path": "<XRSimulatedController>{RightHand}/triggerButton",
+                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{RightHand}/triggerpressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
