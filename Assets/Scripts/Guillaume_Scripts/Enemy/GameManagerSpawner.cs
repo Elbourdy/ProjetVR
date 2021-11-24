@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameManagerSpawner : MonoBehaviour
 {
     private Vector3 spawnPosition;
-    public GameObject EnemyPrefab;
 
     public GameObject Player;
 
@@ -15,6 +14,8 @@ public class GameManagerSpawner : MonoBehaviour
     public float maxAngle;
     public float timerSpawn = 1f;
     public int maxEnemy = 10;
+
+    public GameObject[] EnemyList;
 
 
     //Descend ou augmente dans DestroyOnContact
@@ -65,8 +66,10 @@ public class GameManagerSpawner : MonoBehaviour
     {
         if (canSpawn && enemyCount <= maxEnemy)
         {
-            Instantiate(EnemyPrefab, spawnPosition, transform.rotation);
             canSpawn = false;
+            int randValue = Random.Range(0, EnemyList.Length);
+            Debug.Log(randValue);
+            Instantiate(EnemyList[randValue], spawnPosition, transform.rotation);
         }
     }
 }

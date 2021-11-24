@@ -344,14 +344,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21f1891dbadcdc84b9f0484ccb8350e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 6678087973160914154, guid: 74878c1aa7788a1448040c3a17e1d620,
-    type: 3}
   Player: {fileID: 1450820513}
   maxDist: 60
   minDist: 5
   maxAngle: 45
   timerSpawn: 0.5
   maxEnemy: 10
+  EnemyList:
+  - {fileID: 6678087973160914154, guid: 74878c1aa7788a1448040c3a17e1d620, type: 3}
+  - {fileID: 6678087973160914154, guid: 1bc2da493065ad642a55d21e8e68be79, type: 3}
 --- !u!1 &2116333686
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 6678087973160914154, guid: 74878c1aa7788a1448040c3a17e1d620,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6678087973160914156, guid: 74878c1aa7788a1448040c3a17e1d620,
         type: 3}
