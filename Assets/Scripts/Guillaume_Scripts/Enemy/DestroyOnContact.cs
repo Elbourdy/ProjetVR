@@ -5,8 +5,6 @@ using UnityEngine;
 public class DestroyOnContact : MonoBehaviour
 {
 
-
-
     private void OnEnable()
     {
         GameManagerSpawner.enemyCount += 1;
@@ -23,10 +21,13 @@ public class DestroyOnContact : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             Destroy(gameObject);
+            
         }
         if (other.gameObject.CompareTag("Bolt"))
         {
             other.gameObject.GetComponent<Bolt>().AddEnnemy(this.gameObject);
         }
     }
+
+
 }

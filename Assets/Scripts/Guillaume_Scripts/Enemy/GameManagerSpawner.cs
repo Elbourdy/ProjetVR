@@ -87,7 +87,7 @@ public class GameManagerSpawner : MonoBehaviour
             canSpawn = false;
             int randValue = ChooseEnemyToSpawn();
             Debug.Log(randValue);
-            Instantiate(EnemyList[randValue], spawnPosition, transform.rotation);
+            Instantiate(EnemyList[randValue], spawnPosition, Quaternion.identity);
         }
     }
 }
