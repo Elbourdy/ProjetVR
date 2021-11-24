@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6678087973160914131}
   m_Layer: 3
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Infantry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7499cf6dc9702f4a8efaf4be732f669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 6004984101966434051, guid: fae6eb98b362c2f439d994923d90e802, type: 3}
+  Player: {fileID: 6803999638639516419, guid: 9422cb1c1d3f3b2419827065700dc524, type: 3}
 --- !u!114 &6678087973160914131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,5 +146,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67af9b1e44571014aa2d11a309ae1442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ParticleFeedback: {fileID: 4936061003785600564, guid: aa99a30516f508b4785dc9fee5b33184,
-    type: 3}

@@ -23,11 +23,15 @@ public class DestroyOnContact : MonoBehaviour
             Destroy(gameObject);
             
         }
-        if (other.gameObject.CompareTag("Bolt"))
-        {
-            other.gameObject.GetComponent<Bolt>().AddEnnemy(this.gameObject);
-        }
+        
     }
 
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Bolt"))
+        {
+            Debug.Log("Touch");
+            collision.gameObject.GetComponent<Bolt>().AddEnnemy(this.gameObject);
+        }
+    }
 }
