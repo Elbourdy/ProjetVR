@@ -419,49 +419,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc2da493065ad642a55d21e8e68be79, type: 3}
---- !u!1 &574885377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 574885379}
-  - component: {fileID: 574885378}
-  m_Layer: 0
-  m_Name: HandPressence
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &574885378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574885377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bdd3de7d8f0ef94f8e09dba9b93b0a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &574885379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574885377}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.141496, y: -2.9884486, z: 7.7498655}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &695711174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1413,13 +1370,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ModelPrefab
       value: 
-      objectReference: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b,
+      objectReference: {fileID: 3850223197116537999, guid: 6abd0e604c4cadd4caec01c35fde8489,
         type: 3}
     - target: {fileID: 6803999638244983185, guid: 9422cb1c1d3f3b2419827065700dc524,
         type: 3}
       propertyPath: m_ModelPrefab
       value: 
-      objectReference: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+      objectReference: {fileID: 3850223197116537999, guid: ce0ede9fba75d8c4aaeec66ac2aa4d92,
         type: 3}
     - target: {fileID: 6803999638639516416, guid: 9422cb1c1d3f3b2419827065700dc524,
         type: 3}
