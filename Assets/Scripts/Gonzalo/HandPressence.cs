@@ -14,7 +14,7 @@ public class HandPressence : MonoBehaviour
 
     private InputDevice targetDevice;
     private GameObject spawnedController;
-    private GameObject spawnedHandModel;
+    public GameObject spawnedHandModel;
     private Animator handAnimator;
 
     void Start()
